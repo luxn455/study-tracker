@@ -14,5 +14,7 @@ def find_long_study_days(study_dict):
 
 def calculate_average(study_dict):
     total = calculate_total(study_dict)
+    if len(study_dict) == 0:
+        return 0
     average = total / len(study_dict)
     return average
